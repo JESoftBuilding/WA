@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Grabarte · WhatsApp</title>
+  <!--
+    Página de redirección de Grabarte.
+    El QR impreso en Expo Madera apunta a ESTA página; esta página manda al WhatsApp vigente.
+    Para cambiar el número: editar SOLO la línea DESTINO de abajo (y la del meta refresh).
+    Formato: https://wa.me/549 + área sin 0 + número sin 15 + ?text=mensaje-url-encoded
+  -->
+  <meta http-equiv="refresh" content="0; url=https://wa.me/5491140739342?text=Hola%2C%20vengo%20de%20Expo%20Madera">
+  <script>
+    var DESTINO = "https://wa.me/5491140739342?text=Hola%2C%20vengo%20de%20Expo%20Madera";
+    window.location.replace(DESTINO);
+  </script>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 32px 16px; text-align: center; color: #222; background: #fafafa; }
+    a.btn { display: inline-block; margin-top: 16px; padding: 14px 22px; border-radius: 10px; background: #25D366; color: #fff; text-decoration: none; font-weight: 600; font-size: 18px; }
+    p { color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Grabarte</h1>
+  <p>Te estamos llevando a WhatsApp…</p>
+  <a class="btn" href="https://wa.me/5491140739342?text=Hola%2C%20vengo%20de%20Expo%20Madera">Abrir WhatsApp</a>
+</body>
+</html>
