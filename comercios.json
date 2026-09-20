@@ -1,0 +1,17 @@
+{
+  "numero": "5491140739342",
+  "codigos": {
+    "": {
+      "nombre": "Expo Madera (cartel del local)",
+      "mensaje": "Hola, vengo de Expo Madera"
+    },
+    "CV": {
+      "nombre": "Cuadro vidriera genérico (sin comercio asignado)",
+      "mensaje": "Hola, vi un cuadro de Grabarte y quiero el mío"
+    },
+    "F1": {
+      "nombre": "Ferretería (primer cuadro vidriera)",
+      "mensaje": "Hola, vi el cuadro grabado en la ferretería y quiero el mío"
+    }
+  }
+}
