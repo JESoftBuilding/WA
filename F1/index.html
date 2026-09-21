@@ -4,19 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Grabarte · WhatsApp</title>
+  <title>Grabarte · Pedí el tuyo por WhatsApp</title>
   <!-- Código F1 · Ferretería (primer cuadro vidriera). Generado por generar.py desde comercios.json: no editar a mano. -->
   <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 32px 16px; text-align: center; color: #222; background: #fafafa; }
-    a.btn { display: inline-block; margin-top: 16px; padding: 14px 22px; border-radius: 10px; background: #25D366; color: #fff; text-decoration: none; font-weight: 600; font-size: 18px; }
-    p { color: #666; }
+    html, body { height: 100%; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; background: #fafafa; color: #222;
+           display: flex; align-items: center; justify-content: center; text-align: center; }
+    main { padding: 24px 20px; max-width: 420px; }
+    h1 { font-size: 40px; margin: 0 0 4px; letter-spacing: .5px; }
+    .lema { color: #666; margin: 0 0 28px; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; }
+    a.btn { display: block; padding: 20px 18px; border-radius: 14px; background: #25D366; color: #fff; text-decoration: none;
+             font-weight: 700; font-size: 22px; box-shadow: 0 4px 14px rgba(37,211,102,.35); }
+    a.btn:active { transform: scale(.98); }
+    .msg { color: #555; margin: 22px 0 0; font-size: 15px; line-height: 1.4; }
+    .alt { color: #888; margin: 18px 0 0; font-size: 14px; }
   </style>
 </head>
 <body>
-  <h1>Grabarte</h1>
-  <p>Te estamos llevando a WhatsApp…</p>
-  <a id="btn" class="btn" href="#">Abrir WhatsApp</a>
+  <main>
+    <h1>Grabarte</h1>
+    <p class="lema">Ideas que dejan huella</p>
+    <a id="btn" class="btn" href="#">Abrir WhatsApp</a>
+    <p class="msg">Te va a quedar escrito:<br><span id="msg"></span></p>
+    <p class="alt">¿No se abre? Escribinos al <strong id="num"></strong></p>
+  </main>
   <script src="/WA/wa.js"></script>
-  <script>grabarteIr("Hola, vi el cuadro grabado en la ferretería y quiero el mío");</script>
+  <script>grabartePreparar("Hola, vi el cuadro grabado en la ferretería y quiero el mío");</script>
 </body>
 </html>
